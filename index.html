@@ -537,6 +537,9 @@
 
       fetch(form.action, { method: 'POST', mode: 'no-cors', body: new FormData(form) })
         .then(function () {
+          if (window.goatcounter && window.goatcounter.count) {
+            window.goatcounter.count({ path: 'signup-' + (form.getAttribute('data-source') || 'form'), title: 'Signup', event: true });
+          }
           form.reset();
           status.innerHTML = '';
           var strong = document.createElement('strong');
@@ -574,6 +577,7 @@
     new IntersectionObserver(function (en) { signupVisible = en[0].isIntersecting; update(); }, { threshold: 0.15 }).observe(signup);
   })();
 </script>
+<script data-goatcounter="https://suleabdulrahman.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
 </body>
 </html>
