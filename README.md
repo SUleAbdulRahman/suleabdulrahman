@@ -1,1 +1,6 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9887d253-c4fa-4288-bb21-ca9def41e11c/deploy-status)](https://app.netlify.com/projects/suleabdulrahman/deploys)
+### Sule Abdul Rahman
+
+Agribusiness consultant and author working with cooperatives, agriprocessors and agripreneurs across Northern Ghana and West Africa.
+
+**New book — *From Effort to Systems: Building Agribusinesses That Last.***
+Get notified at launch: [suleabdulrahman.org](https://suleabdulrahman.org)
