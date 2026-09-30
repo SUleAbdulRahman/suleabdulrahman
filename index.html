@@ -219,6 +219,12 @@
   .hero .lead-form input::placeholder{color:#6b7488;}
   .hero .lead-form input:focus{outline:2px solid var(--ink);outline-offset:1px;}
   .micro{margin:12px 0 0;font-size:0.86rem;color:var(--stone);max-width:52ch;}
+  .confirm-note{
+    display:block;margin-bottom:6px;
+    font-weight:700;text-transform:uppercase;letter-spacing:0.04em;line-height:1.4;
+    font-size:0.9rem;color:var(--brick-dark);
+  }
+  .signup .confirm-note{color:var(--brick);}
   .form-status{margin:12px 0 0;font-size:0.95rem;min-height:1.4em;max-width:52ch;}
   .form-status:empty{display:none;}
   .form-status strong{display:block;margin-bottom:4px;}
@@ -385,7 +391,7 @@
         <input type="hidden" name="embed" value="1">
         <button type="submit" class="btn-primary">Notify me at launch</button>
       </form>
-      <p class="micro">One email when the book is out. No spam. Unsubscribe anytime.</p>
+      <p class="micro"><strong class="confirm-note">You'll get a confirmation email first — click the link in it to finish.</strong> One email when the book is out. No spam. Unsubscribe anytime.</p>
       <div class="form-status" role="status" aria-live="polite"></div>
     </div>
 
@@ -477,7 +483,7 @@
       <input type="hidden" name="embed" value="1">
       <button type="submit" class="btn-primary">Join the launch list</button>
     </form>
-    <p class="micro">You'll get a confirmation email first — click the link in it to finish. Unsubscribe anytime.</p>
+    <p class="micro"><strong class="confirm-note">You'll get a confirmation email first — click the link in it to finish.</strong> Unsubscribe anytime.</p>
     <div class="form-status" role="status" aria-live="polite"></div>
 
     <div class="spread">
