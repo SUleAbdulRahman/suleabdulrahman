@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>From Effort to Systems — A Book by Sule Abdul Rahman</title>
-<meta name="description" content="From Effort to Systems by Sule Abdul Rahman: a book for cooperative leaders, agripreneurs and agribusiness students. Join the launch list.">
+<meta name="description" content="From Effort to Systems by Sule Abdul Rahman: a book for cooperative leaders, agripreneurs and agribusiness students. Pre-order the paperback now.">
 <link rel="canonical" href="https://suleabdulrahman.org/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="author" content="Sule Abdul Rahman">
@@ -56,6 +56,7 @@
       "name": "From Effort to Systems",
       "alternativeHeadline": "Building Agribusinesses That Last",
       "author": { "@id": "https://suleabdulrahman.org/#author" },
+      "offers": { "@type": "Offer", "url": "https://selar.com/8965926n6g", "price": "270", "priceCurrency": "GHS", "availability": "https://schema.org/PreOrder", "priceValidUntil": "2026-11-27" },
       "publisher": { "@type": "Organization", "name": "Bando Books" },
       "description": "Fourteen chapters and fourteen practitioner workbooks on why hard work in agribusiness so often fails to compound, and what to build instead.",
       "image": "https://suleabdulrahman.org/assets/cover.jpg",
@@ -210,7 +211,13 @@
     .lead-form{flex-direction:column;}
     .lead-form .btn-primary{width:100%;text-align:center;}
   }
-  .hero .lead-form{margin-top:32px;}
+  .hero .preorder{margin-top:32px;}
+  .hero .preorder .btn-primary{display:inline-block;text-decoration:none;}
+  .hero p.alt{margin:26px 0 0;font-size:0.95rem;color:var(--stone);}
+  .hero .lead-form{margin-top:10px;}
+  .btn-secondary{background:transparent;color:var(--ink);border:1.5px solid var(--ink);padding:12px 22px;font-family:'Inter',sans-serif;font-size:0.98rem;font-weight:500;border-radius:2px;cursor:pointer;white-space:nowrap;}
+  .btn-secondary:hover{background:var(--ink);color:var(--paper);}
+  .signup p a{color:var(--paper);}
   .hero .lead-form input[type="email"]{
     background:#fff;
     border:1px solid rgba(20,33,61,0.35);
@@ -368,7 +375,7 @@
 <header>
   <div class="wrap">
     <div class="mark"><span class="dot">SAR</span> Sule Abdul Rahman</div>
-    <a class="nav-cta" href="#signup">Join the launch list</a>
+    <a class="nav-cta" href="https://selar.com/8965926n6g" target="_blank" rel="noopener">Pre-order</a>
   </div>
 </header>
 
@@ -382,6 +389,11 @@
       <p class="lede">Because effort alone was never the problem. Fourteen chapters and fourteen practitioner workbooks on why hard work in agribusiness so often fails to compound — and what to build instead.</p>
       <p class="audience">For cooperative leaders, agripreneurs, and agriculture and agribusiness students at college and university.</p>
 
+      <div class="preorder">
+        <a class="btn-primary" href="https://selar.com/8965926n6g" target="_blank" rel="noopener">Pre-order the paperback — GHS 270</a>
+        <p class="micro">Launch price until 27 November 2026 (cover price GHS 300). Collect your signed copy at the Tamale launch on 28 November.</p>
+      </div>
+      <p class="alt">Not ready to order? Get launch updates by email.</p>
       <form class="lead-form" id="heroForm" data-source="hero"
             action="https://buttondown.com/api/emails/embed-subscribe/abdul_rahman" method="post">
         <label class="sr-only" for="hero-email">Email address</label>
@@ -389,9 +401,9 @@
                autocomplete="email" inputmode="email">
         <input type="hidden" name="tag" value="site-hero">
         <input type="hidden" name="embed" value="1">
-        <button type="submit" class="btn-primary">Notify me at launch</button>
+        <button type="submit" class="btn-secondary">Get launch updates</button>
       </form>
-      <p class="micro"><strong class="confirm-note">You'll get a confirmation email first — click the link in it to finish.</strong> One email when the book is out. No spam. Unsubscribe anytime.</p>
+      <p class="micro"><strong class="confirm-note">You'll get a confirmation email first — click the link in it to finish.</strong> Launch updates only. No spam. Unsubscribe anytime.</p>
       <div class="form-status" role="status" aria-live="polite"></div>
     </div>
 
@@ -427,7 +439,7 @@
     </blockquote>
     <div class="excerpt-cta">
       <span>Want the rest of the story?</span>
-      <a class="btn-primary" href="#signup">Get notified at launch</a>
+      <a class="btn-primary" href="https://selar.com/8965926n6g" target="_blank" rel="noopener">Pre-order the paperback</a>
     </div>
   </div>
 </section>
@@ -472,7 +484,7 @@
 <section class="signup" id="signup">
   <div class="wrap">
     <h2>Be the first to know</h2>
-    <p>The book is in final preparation. Leave your email and you'll get one message — the day it's available, nothing before that.</p>
+    <p>Pre-orders are open — <a href="https://selar.com/8965926n6g" target="_blank" rel="noopener">order your paperback here</a>. Prefer to wait? Leave your email and you'll hear from us when the book launches.</p>
 
     <form class="lead-form" id="signupForm" data-source="footer"
           action="https://buttondown.com/api/emails/embed-subscribe/abdul_rahman" method="post">
@@ -506,13 +518,13 @@
   </div>
 </footer>
 
-<div class="sticky-cta" id="stickyCta"><a href="#signup">Join the launch list</a></div>
+<div class="sticky-cta" id="stickyCta"><a href="https://selar.com/8965926n6g" target="_blank" rel="noopener">Pre-order the paperback</a></div>
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 
   var SITE_URL = 'https://suleabdulrahman.org/?ref=share';
-  var SHARE_TEXT = "Most agribusinesses don't fail from lack of effort. They fail from lack of systems. \"From Effort to Systems\" by Sule Abdul Rahman is for farmers, cooperative leaders, agripreneurs and agribusiness students — get notified at launch:";
+  var SHARE_TEXT = "Most agribusinesses don't fail from lack of effort. They fail from lack of systems. \"From Effort to Systems\" by Sule Abdul Rahman is for farmers, cooperative leaders, agripreneurs and agribusiness students — pre-orders are open:";
 
   function buildShareRow(row) {
     row.innerHTML = '';
