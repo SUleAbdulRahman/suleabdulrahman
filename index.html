@@ -57,7 +57,12 @@
       "alternativeHeadline": "Building Agribusinesses That Last",
       "author": { "@id": "https://suleabdulrahman.org/#author" },
       "offers": { "@type": "Offer", "url": "https://selar.com/8965926n6g", "availability": "https://schema.org/PreOrder" },
-      "publisher": { "@type": "Organization", "name": "Bando Books" },
+      "publisher": { "@type": "Organization", "name": "Bando Books", "url": "https://bandobooks.com/" },
+      "workExample": [
+        { "@type": "Book", "bookFormat": "https://schema.org/Paperback", "isbn": "9789988431457", "offers": { "@type": "Offer", "url": "https://selar.com/8965926n6g", "availability": "https://schema.org/PreOrder" } },
+        { "@type": "Book", "bookFormat": "https://schema.org/Hardcover", "isbn": "9789988455293" },
+        { "@type": "Book", "bookFormat": "https://schema.org/EBook", "isbn": "9789988431464" }
+      ],
       "description": "Fourteen chapters and fourteen practitioner workbooks on why hard work in agribusiness so often fails to compound, and what to build instead.",
       "image": "https://suleabdulrahman.org/assets/cover.jpg",
       "url": "https://suleabdulrahman.org/",
@@ -186,6 +191,9 @@
 
   .cover-wrap{display:flex;justify-content:center;}
   .cover-wrap figure{margin:0;max-width:380px;width:100%;}
+  .isbn{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;margin:18px 0 0;font-size:0.84rem;color:var(--stone);}
+  .isbn dt{font-weight:600;color:var(--ink);}
+  .isbn dd{margin:0;font-variant-numeric:tabular-nums;}
   .cover-wrap img{
     width:100%;height:auto;display:block;
     border-radius:3px;
@@ -412,6 +420,12 @@
         <img src="assets/cover.jpg?v=2" width="800" height="1184" fetchpriority="high"
              alt="Cover of the book From Effort to Systems: Building Agribusinesses That Last, by Sule Abdul Rahman">
         <figcaption>Effort scatters. Systems connect.</figcaption>
+        <dl class="isbn">
+          <dt>Publisher</dt><dd>Bando Books, Accra</dd>
+          <dt>Paperback</dt><dd>ISBN 978-9988-43-145-7</dd>
+          <dt>Hardcover</dt><dd>ISBN 978-9988-45-529-3</dd>
+          <dt>Ebook</dt><dd>ISBN 978-9988-43-146-4</dd>
+        </dl>
       </figure>
     </div>
   </div>
