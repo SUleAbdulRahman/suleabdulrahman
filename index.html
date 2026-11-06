@@ -283,6 +283,17 @@
     display:flex;align-items:center;gap:18px;flex-wrap:wrap;}
   .excerpt-cta span{font-family:'Fraunces',serif;font-size:1.1rem;color:var(--ink);}
 
+  .praise{border-top:1px solid var(--line);}
+  .praise .wrap{max-width:960px;}
+  .praise h2{font-size:clamp(1.6rem,3vw,2.1rem);font-weight:600;margin-bottom:32px;}
+  .praise-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 40px;}
+  @media (max-width:640px){.praise-grid{grid-template-columns:1fr;}}
+  .praise figure{margin:0;border-top:1px solid var(--line);padding-top:18px;}
+  .praise blockquote{margin:0 0 14px;font-family:'Fraunces',serif;font-size:1.05rem;line-height:1.55;color:var(--ink);}
+  .praise blockquote::before{content:"\201C";}
+  .praise blockquote::after{content:"\201D";}
+  .praise figcaption{font-size:0.86rem;color:var(--stone);}
+  .praise figcaption strong{display:block;color:var(--ink);font-weight:600;}
   .inside .wrap{max-width:960px;}
   .inside h2{font-size:clamp(1.6rem,3vw,2.1rem);font-weight:600;margin-bottom:12px;}
   .inside .sub{color:var(--stone);font-size:1rem;margin-bottom:40px;max-width:60ch;}
@@ -437,7 +448,7 @@
   <div class="wrap">
     <h2>Why this book exists</h2>
     <p>Sule Abdul Rahman grew up in Bando, near Elmina. He lost his father early. His mother's illness stretched the family thin for years that mattered. What carried him through was not a single lucky break — it was learning, slowly and out of necessity, how to build structure out of very little.</p>
-    <p>He carried that instinct into agriculture and organisational work — first at CSIR-SARI, then with the Masara N'Arziki Farmers Association, then as Technical/Commercial Business Partner Coordinator at the Agricultural Labour Services Agency — before founding an agribusiness consulting practice in Northern Ghana. Everywhere he has worked, he has seen the same pattern: people working harder than anyone should have to, in organisations that still cannot tell you what a bag of maize actually costs to produce.</p>
+    <p>He carried that instinct into agriculture and organisational work — national service at CSIR-SARI in Nyankpala, six years as a Technical Field Specialist with the Masara N'Arziki Farmers Association, then three years as Commercial Business Partner Coordinator with the Agricultural Labour Services Agency — before founding an agribusiness consulting practice in Northern Ghana. Everywhere he has worked, he has seen the same pattern: people working harder than anyone should have to, in organisations that still cannot tell you what a bag of maize actually costs to produce.</p>
     <p><em>From Effort to Systems</em> is what he has learned about closing that gap — written for the people doing the work, not the people funding it.</p>
   </div>
 </section>
@@ -446,14 +457,27 @@
   <div class="wrap">
     <div class="label">An excerpt from the introduction</div>
     <blockquote>
-      <p>At 5:30 a.m., the cooperative chairman was already in the field. By 8:00 p.m., he was still solving problems. Everyone called him hardworking. Yet his cooperative was losing money.</p>
-      <p>Development programmes have trained millions of farmers. Yet many communities remain trapped in the same cycle. The uncomfortable reality is that training alone rarely changes organisational performance. Systems do.</p>
-      <p>In 2021, I visited a farmer group that had received more support in three years than some cooperatives receive in a decade. They had tractors, seed, fertiliser, and training. Yet they could not tell me how much it cost to produce a bag of maize. The problem was not resources. The problem was that nobody had built a management system.</p>
+      <p>I did not set out to write a book about systems. I set out to understand why agribusinesses keep failing, even when the people running them are working harder than anyone I have ever met.</p>
+      <p>I watched more than half of a 1,026.5-tonne onion harvest (41,060 bags of 25 kg) rot or sell at a loss because we had built a production system but not a marketing system. I sat across the table from farmer groups that had received more support in three years than most cooperatives receive in a decade (tractors, seed, fertiliser and training), yet they could not tell me what it cost to produce a single bag of maize.</p>
+      <p>I spent seven years building a rubber plantation, contracted a trusted family member to manage it, received incomplete records, and eventually came back from the United Kingdom to find the farm had effectively been abandoned. I lost somewhere between GH₵300,000 and GH₵400,000 because I built a crop but not a business.</p>
       <cite>— From Effort to Systems</cite>
     </blockquote>
     <div class="excerpt-cta">
       <span>Want the rest of the story?</span>
       <a class="btn-primary" href="https://selar.com/8965926n6g" target="_blank" rel="noopener">Pre-order the paperback</a>
+    </div>
+  </div>
+</section>
+
+<section class="praise">
+  <div class="wrap">
+    <h2>Praise for <em>From Effort to Systems</em></h2>
+    <div class="praise-grid">
+      <figure><blockquote>Its content is strong enough to be taught as a course in its own right. Lecturers will find a ready teaching resource, students a bridge between theory and practice, and practitioners a clear path to building sustainable agribusinesses.</blockquote><figcaption><strong>Prof. Awal Abdul-Rahaman</strong>Associate Professor, Department of Agribusiness, University for Development Studies, Ghana</figcaption></figure>
+      <figure><blockquote>I find this book very relevant to agriculture in Ghana and beyond because it shows that producing more is not enough; farmers also need good systems to manage money, markets, people and operations. It is practical, easy to relate to, and provides useful lessons for farmers, agribusiness owners, cooperatives and agricultural practitioners.</blockquote><figcaption><strong>Dr Daniel Brain Akakpo</strong>Lecturer, Department of Crop Science, School of Agriculture, University of Ghana, Legon</figcaption></figure>
+      <figure><blockquote>From Effort to Systems is a must-read for anyone in agribusiness. Its standout feature is &lsquo;From My Field Notebook&rsquo;, the field story that opens every chapter. I recommend this book to every student, teacher and practitioner of agribusiness.</blockquote><figcaption><strong>Mr David Kofi Dokli</strong>District Co-ordinating Director, Local Government Service</figcaption></figure>
+      <figure><blockquote>This book answers most of the gaps and puts to rest the idea that farming is for the less ambitious. Sule Abdul Rahman has successfully redefined agriculture as a first-class business.</blockquote><figcaption><strong>Mr Fred Newman Coleman</strong>Lecturer, Department of Agriculture, Methodist University Ghana</figcaption></figure>
+      <figure><blockquote>Extension officers and field workers should study its methodology and use it to train farmers. It deserves a place in our national curriculum.</blockquote><figcaption><strong>Mr Seidu James Musah</strong>Deputy District Director of Agriculture, Ministry of Food and Agriculture</figcaption></figure>
     </div>
   </div>
 </section>
@@ -465,15 +489,15 @@
     <div class="inside-grid">
       <div class="inside-item">
         <h3>Field-tested frameworks</h3>
-        <p>Established management thinking, including Boehlje's agribusiness systems framework, reworked for cooperatives, agriprocessors, and agripreneurs operating with real constraints.</p>
+        <p>Established management thinking, including Michael Boehlje's work on structural change and strategic uncertainty in agribusiness, reworked for cooperatives, agriprocessors, and agripreneurs operating with real constraints.</p>
       </div>
       <div class="inside-item">
         <h3>Practitioner workbooks</h3>
-        <p>Fourteen companion workbooks that turn each framework into a working document — something a cooperative can actually fill in and use, not just read.</p>
+        <p>Fourteen companion workbooks that turn each framework into a working document — something a cooperative can actually fill in and use, not just read. Book owners get the complete A4 collection free from <a href="https://bandobooks.com/#workbooks">Bando Books</a>.</p>
       </div>
       <div class="inside-item">
-        <h3>First-person openers</h3>
-        <p>Each chapter opens with a real career episode, not a hypothetical — including a named mentee's story from the ground.</p>
+        <h3>From My Field Notebook</h3>
+        <p>Each chapter opens with a real career episode from the field, not a hypothetical — including the story of a former mentee, Isaac.</p>
       </div>
       <div class="inside-item">
         <h3>Written for the practitioner</h3>
@@ -489,8 +513,8 @@
     <ul class="cred-list">
       <li><span class="yr">Field</span> Agricultural upbringing and a career built inside farmer organisations, not observing them from outside.</li>
       <li><span class="yr">Practice</span> Founder of an agribusiness consulting firm serving agriprocessors, agripreneurs, and cooperatives across Northern Ghana and West Africa.</li>
-      <li><span class="yr">Credential</span> Certified Business Analyst.</li>
-      <li><span class="yr">Experience</span> Prior work with Masara N'Arziki Farmers Association and CSIR-SARI, including as Technical/Commercial Business Partner Coordinator at the Agricultural Labour Services Agency.</li>
+      <li><span class="yr">Credentials</span> Bachelor of Business Administration, Valley View University. Certified Business Analyst.</li>
+      <li><span class="yr">Experience</span> National service with CSIR-SARI, Nyankpala; six years as Technical Field Specialist, Masara N'Arziki Farmers Association; three years as Commercial Business Partner Coordinator, Agricultural Labour Services Agency (ALSA). Has also worked with Tumu Cooperative and Babator Farming Company.</li>
     </ul>
   </div>
 </section>
@@ -527,7 +551,7 @@
     <span class="imprint">&copy; <span id="year"></span> Sule Abdul Rahman &middot; Published by Bando Books</span>
     <div class="links">
       <a href="https://www.linkedin.com/in/sule-abdul-rahman" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="mailto:abdulrahman0542@gmail.com">Email</a>
+      <a href="mailto:hello@bandobooks.com">Email</a>
     </div>
   </div>
 </footer>
