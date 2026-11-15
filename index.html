@@ -314,22 +314,23 @@
   }
   .inside-item p{margin:0;font-size:0.97rem;color:var(--ink-soft);}
 
-  .portfolio .wrap{max-width:960px;}
-  .portfolio h2{font-size:clamp(1.6rem,3vw,2.1rem);font-weight:600;margin-bottom:12px;}
-  .portfolio .sub{color:var(--stone);font-size:1rem;margin-bottom:40px;max-width:60ch;}
-  .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px 40px;}
-  @media (max-width:860px){.work-grid{grid-template-columns:1fr;}}
-  .work{border-top:1px solid var(--line);padding-top:18px;display:flex;flex-direction:column;}
-  .work .kind{font-size:0.78rem;font-weight:600;text-transform:uppercase;letter-spacing:0.14em;color:var(--brick-dark);margin-bottom:10px;}
-  .work h3{font-size:1.15rem;font-weight:600;margin-bottom:8px;line-height:1.3;}
-  .work p{margin:0 0 14px;font-size:0.97rem;}
-  .work .meta{font-size:0.86rem;color:var(--stone);margin-top:auto;}
-  .work .more{display:inline-block;margin-top:12px;font-size:0.92rem;font-weight:500;color:var(--ink);text-underline-offset:3px;}
-  .work .more:hover{color:var(--brick-dark);}
-  .worked-with{margin-top:48px;padding-top:22px;border-top:1px solid var(--line);}
-  .worked-with .kind{font-size:0.78rem;font-weight:600;text-transform:uppercase;letter-spacing:0.14em;color:var(--stone);margin-bottom:12px;}
-  .worked-with ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 28px;}
-  .worked-with li{font-family:'Fraunces',serif;font-size:1.02rem;color:var(--ink);}
+  .work .wrap{max-width:960px;}
+  .work-label{margin:0 0 10px;font-size:0.78rem;font-weight:600;text-transform:uppercase;letter-spacing:0.14em;color:var(--brick-dark);}
+  .work h2{font-size:clamp(1.6rem,3vw,2.1rem);font-weight:600;margin-bottom:12px;}
+  .work-intro{color:var(--stone);font-size:1rem;margin:0 0 36px;max-width:62ch;}
+  .work-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  @media (max-width:860px){.work-list{grid-template-columns:1fr;gap:16px;}}
+  .work-list li{display:flex;}
+  .work-card{display:flex;flex-direction:column;width:100%;padding:22px 22px 20px;background:var(--paper-2);border:1px solid var(--line);border-radius:2px;text-decoration:none;color:var(--ink-soft);transition:border-color .18s ease;}
+  .work-card:hover,.work-card:focus-visible{border-color:var(--ink);}
+  .work-tag{font-size:0.75rem;font-weight:600;text-transform:uppercase;letter-spacing:0.14em;color:var(--stone);margin-bottom:10px;}
+  .work-name{font-family:'Fraunces',serif;font-size:1.18rem;font-weight:600;color:var(--ink);line-height:1.3;margin-bottom:8px;}
+  .work-desc{font-size:0.96rem;margin-bottom:16px;}
+  .work-url{margin-top:auto;font-size:0.88rem;font-weight:500;color:var(--ink);overflow-wrap:anywhere;}
+  .work-card:hover .work-url{color:var(--brick-dark);}
+  .work-cta{margin:32px 0 0;font-size:1rem;}
+  .work-cta a{color:var(--ink);font-weight:500;text-underline-offset:3px;}
+  .work-cta a:hover{color:var(--brick-dark);}
 
   .credibility{background:var(--paper-2);}
   .credibility .wrap{max-width:780px;}
@@ -423,7 +424,7 @@
 <header>
   <div class="wrap">
     <div class="mark"><span class="dot">SAR</span> Sule Abdul Rahman</div>
-    <nav class="nav"><a class="nav-link" href="#portfolio">Portfolio</a><a class="nav-cta" href="https://selar.com/8965926n6g" target="_blank" rel="noopener">Pre-order</a></nav>
+    <nav class="nav"><a class="nav-link" href="#work">Work</a><a class="nav-cta" href="https://selar.com/8965926n6g" target="_blank" rel="noopener">Pre-order</a></nav>
   </div>
 </header>
 
@@ -538,42 +539,29 @@
 
 <div class="wrap rule"></div>
 
-<section class="portfolio" id="portfolio">
+<section class="work" id="work">
   <div class="wrap">
-    <h2>Portfolio</h2>
-    <p class="sub">Selected work in agribusiness systems: in print, in practice and in the field.</p>
-    <div class="work-grid">
-      <article class="work">
-        <div class="kind">Book</div>
-        <h3><em>From Effort to Systems: Building Agribusinesses That Last</em></h3>
-        <p>Fourteen chapters on why hard work in agribusiness so often fails to compound, and what to build instead. Each chapter opens with a real field story.</p>
-        <div class="meta">Bando Books, 2026 · Paperback ISBN 978-9988-43-145-7</div>
-        <a class="more" href="https://selar.com/8965926n6g" target="_blank" rel="noopener">Pre-order the paperback</a>
-      </article>
-      <article class="work">
-        <div class="kind">Tools</div>
-        <h3>Practitioner workbooks</h3>
-        <p>Fourteen companion workbooks that turn each framework in the book into a working document a cooperative or business can fill in and use.</p>
-        <div class="meta">Bando Books · A4 collection, free to book owners</div>
-        <a class="more" href="https://bandobooks.com/#workbooks">See the workbooks</a>
-      </article>
-      <article class="work">
-        <div class="kind">Practice</div>
-        <h3>Agribusiness consulting</h3>
-        <p>Founder of an agribusiness consulting firm that helps cooperatives, agriprocessors and agripreneurs find where money is lost and build the systems to stop it.</p>
-        <div class="meta">Northern Ghana and West Africa</div>
-      </article>
-    </div>
-    <div class="worked-with">
-      <div class="kind">Field experience with</div>
-      <ul>
-        <li>CSIR-SARI, Nyankpala</li>
-        <li>Masara N'Arziki Farmers Association</li>
-        <li>Agricultural Labour Services Agency (ALSA)</li>
-        <li>Tumu Cooperative</li>
-        <li>Babator Farming Company</li>
-      </ul>
-    </div>
+    <p class="work-label">Digital work</p>
+    <h2>Websites I've built</h2>
+    <p class="work-intro">I design, build and run every site below myself, from the first sketch to the domain, email and hosting. Each one is built to work on a phone and to turn visitors into enquiries.</p>
+    <ul class="work-list">
+      <li><a class="work-card" href="https://agrivalueadvisoryconsult.com" target="_blank" rel="noopener">
+        <span class="work-tag">Consulting firm</span>
+        <span class="work-name">AgriValue Advisory Consult</span>
+        <span class="work-desc">Service pages, articles and a direct WhatsApp line, built to bring in client enquiries.</span>
+        <span class="work-url">agrivalueadvisoryconsult.com &rarr;</span></a></li>
+      <li><a class="work-card" href="https://bandobooks.com" target="_blank" rel="noopener">
+        <span class="work-tag">Publisher</span>
+        <span class="work-name">Bando Books</span>
+        <span class="work-desc">Brand identity, book and workbook catalogue, online pre-orders and an email list.</span>
+        <span class="work-url">bandobooks.com &rarr;</span></a></li>
+      <li><a class="work-card" href="https://suleabdulrahman.org">
+        <span class="work-tag">Author site</span>
+        <span class="work-name">Sule Abdul Rahman</span>
+        <span class="work-desc">This site: author profile, endorsements and a launch list that collects readers' emails.</span>
+        <span class="work-url">suleabdulrahman.org &rarr;</span></a></li>
+    </ul>
+    <p class="work-cta">Need a website for your school, cooperative or business? <a href="https://www.linkedin.com/in/sule-abdul-rahman" target="_blank" rel="noopener">Message me on LinkedIn</a>.</p>
   </div>
 </section>
 
