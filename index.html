@@ -137,6 +137,10 @@
     white-space:nowrap;
   }
   .nav-cta:hover{background:var(--ink);color:var(--paper);}
+  .nav{display:flex;align-items:center;gap:22px;}
+  .nav-link{font-size:0.9rem;font-weight:500;color:var(--ink);text-decoration:none;}
+  .nav-link:hover{color:var(--brick-dark);text-decoration:underline;text-underline-offset:3px;}
+  @media (max-width:420px){.mark{font-size:0.95rem;}.nav{gap:14px;}}
 
   .hero{padding:76px 0 88px;}
   .hero .wrap{
@@ -310,6 +314,23 @@
   }
   .inside-item p{margin:0;font-size:0.97rem;color:var(--ink-soft);}
 
+  .work .wrap{max-width:1000px;}
+  .work-label{font-size:0.86rem;color:var(--stone);margin:0 0 10px;letter-spacing:.04em;}
+  .work h2{font-size:clamp(1.6rem,3vw,2.1rem);font-weight:600;margin-bottom:16px;}
+  .work-intro{max-width:640px;font-size:1.05rem;margin:0 0 32px;}
+  .work-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  @media (max-width:860px){.work-list{grid-template-columns:1fr;}}
+  .work-card{display:flex;flex-direction:column;gap:8px;height:100%;padding:24px;background:var(--paper-2);border:1px solid var(--line);border-top:3px solid var(--brick);border-radius:2px;text-decoration:none;color:inherit;}
+  .work-tag{font-size:.74rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brick-dark);}
+  .work-name{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:600;color:var(--ink);line-height:1.2;}
+  .work-desc{font-size:.97rem;color:var(--ink-soft);flex:1;}
+  .work-url{font-size:.9rem;font-weight:600;color:var(--ink);margin-top:6px;}
+  .work-cta{margin:32px 0 0;font-size:1.02rem;}
+  .work-card{transition:border-color .18s ease;}
+  .work-card:hover{border-color:var(--ink);border-top-color:var(--brick);}
+  .work-card:hover .work-url{color:var(--brick-dark);text-decoration:underline;text-underline-offset:3px;}
+  .work-card:focus-visible{outline:2px solid var(--ink);outline-offset:3px;}
+
   .credibility{background:var(--paper-2);}
   .credibility .wrap{max-width:780px;}
   .credibility h2{font-size:clamp(1.6rem,3vw,2.1rem);font-weight:600;margin-bottom:24px;}
@@ -402,7 +423,7 @@
 <header>
   <div class="wrap">
     <div class="mark"><span class="dot">SAR</span> Sule Abdul Rahman</div>
-    <a class="nav-cta" href="https://selar.com/8965926n6g" target="_blank" rel="noopener">Pre-order</a>
+    <nav class="nav"><a class="nav-link" href="#work">Work</a><a class="nav-cta" href="https://selar.com/8965926n6g" target="_blank" rel="noopener">Pre-order</a></nav>
   </div>
 </header>
 
@@ -512,6 +533,34 @@
         <p>Not a donor report and not a textbook. Built for the person who has to make the organisation work on Monday morning.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<div class="wrap rule"></div>
+
+<section class="work" id="work">
+  <div class="wrap">
+    <p class="work-label">Digital work</p>
+    <h2>Websites I've built</h2>
+    <p class="work-intro">I design, build and run every site below myself, from the first sketch to the domain, email and hosting. Each one is built to work on a phone and to turn visitors into enquiries.</p>
+    <ul class="work-list">
+      <li><a class="work-card" href="https://agrivalueadvisoryconsult.com" target="_blank" rel="noopener">
+        <span class="work-tag">Consulting firm</span>
+        <span class="work-name">AgriValue Advisory Consult</span>
+        <span class="work-desc">Service pages, articles and a direct WhatsApp line, built to bring in client enquiries.</span>
+        <span class="work-url">agrivalueadvisoryconsult.com &rarr;</span></a></li>
+      <li><a class="work-card" href="https://bandobooks.com" target="_blank" rel="noopener">
+        <span class="work-tag">Publisher</span>
+        <span class="work-name">Bando Books</span>
+        <span class="work-desc">Brand identity, book and workbook catalogue, online pre-orders and an email list.</span>
+        <span class="work-url">bandobooks.com &rarr;</span></a></li>
+      <li><a class="work-card" href="https://suleabdulrahman.org">
+        <span class="work-tag">Author site</span>
+        <span class="work-name">Sule Abdul Rahman</span>
+        <span class="work-desc">This site: author profile, endorsements and a launch list that collects readers' emails.</span>
+        <span class="work-url">suleabdulrahman.org &rarr;</span></a></li>
+    </ul>
+    <p class="work-cta">Need a website for your school, cooperative or business? <a href="https://www.linkedin.com/in/sule-abdul-rahman" target="_blank" rel="noopener">Message me on LinkedIn</a>.</p>
   </div>
 </section>
 
