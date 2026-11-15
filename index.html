@@ -326,6 +326,10 @@
   .work-desc{font-size:.97rem;color:var(--ink-soft);flex:1;}
   .work-url{font-size:.9rem;font-weight:600;color:var(--ink);margin-top:6px;}
   .work-cta{margin:32px 0 0;font-size:1.02rem;}
+  .work-card{transition:border-color .18s ease;}
+  .work-card:hover{border-color:var(--ink);border-top-color:var(--brick);}
+  .work-card:hover .work-url{color:var(--brick-dark);text-decoration:underline;text-underline-offset:3px;}
+  .work-card:focus-visible{outline:2px solid var(--ink);outline-offset:3px;}
 
   .credibility{background:var(--paper-2);}
   .credibility .wrap{max-width:780px;}
