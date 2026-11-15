@@ -1,0 +1,3 @@
+# Keep the GitHub profile README off the public website.
+exclude:
+  - README.md
