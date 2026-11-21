@@ -416,6 +416,16 @@
     html{scroll-behavior:auto;}
     .sticky-cta{transition:none;}
   }
+
+.lang-pick{display:inline-flex;align-items:center;gap:6px;font-size:0.85rem;color:inherit;position:relative}
+.lang-pick select{font:inherit;color:inherit;background:transparent;border:1px solid currentColor;border-radius:999px;padding:4px 10px;max-width:9.5rem;cursor:pointer;opacity:.85}
+.lang-pick select:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+.lang-pick .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.goog-te-banner-frame,.skiptranslate>iframe,#goog-gt-tt,.goog-te-balloon-frame{display:none!important}
+body{top:0!important}
+#google_translate_element{display:none}
+
+@media (max-width:640px){.lang-pick{width:34px;height:34px;justify-content:center;border:1px solid currentColor;border-radius:50%;flex:none}.lang-pick select{position:absolute;inset:0;width:100%;max-width:none;opacity:0}}
 </style>
 </head>
 <body>
@@ -423,7 +433,7 @@
 <header>
   <div class="wrap">
     <div class="mark"><span class="dot">SAR</span> Sule Abdul Rahman</div>
-    <nav class="nav"><a class="nav-link" href="#work">Work</a><a class="nav-cta" href="https://selar.com/8965926n6g" target="_blank" rel="noopener">Pre-order</a></nav>
+    <nav class="nav"><label class="lang-pick notranslate" translate="no"><span class="sr">Language</span><svg aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><path fill="none" stroke="currentColor" stroke-width="1.6" d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Zm-9 9h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></svg><select id="lang" aria-label="Language"><option value="en">English</option><option value="sw">Kiswahili</option><option value="ha">Hausa</option><option value="yo">Yorùbá</option><option value="ig">Igbo</option><option value="ak">Twi (Akan)</option><option value="ee">Eʋegbe (Ewe)</option><option value="gaa">Ga</option><option value="am">አማርኛ (Amharic)</option><option value="so">Soomaali</option><option value="om">Afaan Oromoo</option><option value="zu">isiZulu</option><option value="xh">isiXhosa</option><option value="sn">chiShona</option><option value="rw">Kinyarwanda</option><option value="ln">Lingála</option><option value="wo">Wolof</option><option value="af">Afrikaans</option><option value="pt">Português</option><option value="ar">العربية (Arabic)</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="es">Español</option><option value="sv">Svenska</option></select></label><a class="nav-link" href="#work">Work</a><a class="nav-cta" href="https://selar.com/8965926n6g" target="_blank" rel="noopener">Pre-order</a></nav>
   </div>
 </header>
 
@@ -432,7 +442,7 @@
   <div class="wrap">
     <div>
       <div class="hero-eyebrow">A book by Sule Abdul Rahman</div>
-      <h1>From Effort to Systems</h1>
+      <h1 translate="no" class="notranslate">From Effort to Systems</h1>
       <div class="subhead">Building Agribusinesses That Last</div>
       <p class="lede">Because effort alone was never the problem. Fourteen chapters and fourteen practitioner workbooks on why hard work in agribusiness so often fails to compound — and what to build instead.</p>
       <p class="audience">For cooperative leaders, agripreneurs, and agriculture and agribusiness students at college and university.</p>
@@ -606,7 +616,7 @@
 
 <footer>
   <div class="wrap">
-    <span class="imprint">&copy; <span id="year"></span> Sule Abdul Rahman &middot; Published by <a href="https://bandobooks.com/" target="_blank" rel="noopener">Bando Books</a></span>
+    <span class="imprint">&copy; <span id="year"></span> Sule Abdul Rahman &middot; Published by <a href="https://bandobooks.com/" target="_blank" rel="noopener">Bando Books</a> &middot; Designed by Sule</span>
     <div class="links">
       <a class="publisher-contact" href="mailto:hello@bandobooks.com">Contact the publisher: <span class="em">hello@bandobooks.com</span></a>
       <span class="social"><a class="soc" href="https://www.linkedin.com/in/sule-abdul-rahman" target="_blank" rel="noopener" aria-label="Sule Abdul Rahman on LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="3"/><g class="k"><circle cx="7.5" cy="7.4" r="1.6"/><rect x="6" y="10" width="3" height="8.5"/><path d="M11 10h2.8v1.3c.5-.9 1.6-1.5 2.9-1.5 2.4 0 3.4 1.5 3.4 4.1v4.6h-3v-4c0-1.1-.3-1.9-1.4-1.9-1.1 0-1.7.8-1.7 1.9v4H11z"/></g></svg></a><a class="soc" href="https://www.facebook.com/profile.php?id=61596547372256" target="_blank" rel="noopener" aria-label="Sule Abdul Rahman on Facebook" title="Facebook"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path class="k" d="M13.3 22v-7.3h2.5l.4-2.9h-2.9V9.9c0-.8.3-1.4 1.4-1.4h1.6V5.9c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.1H7.7v2.9h2.5V22z"/></svg></a><a class="soc" href="https://www.instagram.com/abdulrahmansule/" target="_blank" rel="noopener" aria-label="Sule Abdul Rahman on Instagram" title="Instagram (@abdulrahmansule)"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="6"/><rect class="k" x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="4.4"/><circle class="k" cx="12" cy="12" r="2.7"/><circle cx="17.2" cy="6.8" r="1.15"/></svg></a><a class="soc" href="https://x.com/abdulra38633000" target="_blank" rel="noopener" aria-label="Sule Abdul Rahman on X" title="X (@abdulra38633000)"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4"/><path class="k" transform="translate(5.5 5.5) scale(.54)" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg></a><a class="soc" href="https://www.tiktok.com/@sule51338" target="_blank" rel="noopener" aria-label="Sule Abdul Rahman on TikTok" title="TikTok (@sule51338)"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="4"/><path class="k" transform="translate(6 5.2) scale(.56)" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a><a class="soc" href="mailto:hello@bandobooks.com" aria-label="Email hello@bandobooks.com" title="Email"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="2" y="4.5" width="20" height="15" rx="2.5"/><path class="k" d="M5 8.2l7 4.6 7-4.6v1.9l-7 4.6-7-4.6z"/></svg></a></span>
@@ -701,5 +711,22 @@
 </script>
 <script data-goatcounter="https://suleabdulrahman.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 
+<div id="google_translate_element"></div>
+<script>
+(function(){
+  var s=document.getElementById('lang'); if(!s) return;
+  var m=document.cookie.match(/(?:^|; )googtrans=\/en\/([^;]+)/);
+  if(m){ s.value=m[1];
+    window.gtInit=function(){ new google.translate.TranslateElement({pageLanguage:'en',includedLanguages:'sw,ha,yo,ig,ak,ee,gaa,am,so,om,zu,xh,sn,rw,ln,wo,af,pt,ar,fr,de,es,sv',autoDisplay:false},'google_translate_element'); };
+    var g=document.createElement('script'); g.src='https://translate.google.com/translate_a/element.js?cb=gtInit'; g.async=true; document.body.appendChild(g);
+  }
+  s.addEventListener('change',function(){
+    var v=s.value, h=location.hostname, val=(v==='en')?'':'/en/'+v;
+    var exp=(v==='en')?'; expires=Thu, 01 Jan 1970 00:00:00 GMT':'; max-age=31536000';
+    ['','; domain='+h,'; domain=.'+h].forEach(function(d){ document.cookie='googtrans='+val+'; path=/'+d+exp; });
+    location.reload();
+  });
+})();
+</script>
 </body>
 </html>
